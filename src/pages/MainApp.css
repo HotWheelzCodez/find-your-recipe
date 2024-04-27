@@ -1,0 +1,95 @@
+.main-app {
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--theme-color);
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  color: var(--theme-color);
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-selection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  min-width: 200px;
+  background-color: var(--theme-color);
+  color: var(--background-color);
+}
+
+.drop-down {
+  min-width: 200px;
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-name {
+  color: var(--theme-color);
+  padding: none;
+  font-size: 24px;
+}
+
+.add-ingredient {
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.display-ingredients {
+  background-color: var(--theme-color);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.ingredient {
+  background-color: var(--theme-color);
+  border: none;
+  outline: none;
+}
+
+.ingredient:hover {
+  background-color: #cc7711;
+}
+
+.display-items {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.selected-ingredient {
+  background-color: var(--theme-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.selected-ingredient:hover {
+  background-color: #cc7711;
+}
