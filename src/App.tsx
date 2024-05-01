@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "./App.css";
 import 'bootstrap/dist/css/bootstrap.css'; 
+import "./App.css";
 import recipe from "./assets/recipe.jpeg";
 import recipe1 from "./assets/recipe1.jpeg";
 import recipe2 from "./assets/recipe2.jpeg";
