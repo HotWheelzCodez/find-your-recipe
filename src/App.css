@@ -5,8 +5,8 @@
 }
 
 body, root, html {
-  margin: none;
-  padding: none;
+  margin: 0;
+  padding: 0;
   background-color: var(--background-color);
 }
 
