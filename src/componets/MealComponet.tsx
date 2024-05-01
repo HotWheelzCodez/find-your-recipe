@@ -1,7 +1,12 @@
 import "./MealComponet.css";
+import { Meal } from "../types/Meal";
 
-const MealComponet = ({ meal: Meal }) => {
-  const validIngredients: string[] = meal.listedIngredients.filter(ingredient: string => ingredient != '' && ingredient != null);
+interface MealComponetProps {
+  meal: Meal;
+}
+
+const MealComponet: React.FC<MealComponetProps> = ({ meal }) => {
+  const validIngredients: string[] = meal.listedIngredients.filter(ingredient => ingredient != '' && ingredient != null);
   const ingredientsText = validIngredients.join(', ');
 
   return (

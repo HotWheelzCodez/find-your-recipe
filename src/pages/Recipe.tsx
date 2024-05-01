@@ -18,7 +18,7 @@ const Recipe = () => {
     setTimeout(() => {
       fetchMeals();
       setMeals(currentMeals => [...currentMeals].sort((a, b) => b.rank - a.rank).slice(0, 10));
-    }, 750);
+    }, 1000);
   }, []);
 
   return (
