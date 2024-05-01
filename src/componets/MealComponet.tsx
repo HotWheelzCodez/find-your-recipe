@@ -1,7 +1,7 @@
 import "./MealComponet.css";
 
-const MealComponet = ({ meal }) => {
-  const validIngredients: string[] = meal.listedIngredients.filter(ingredient => ingredient != '' && ingredient != null);
+const MealComponet = ({ meal: Meal }) => {
+  const validIngredients: string[] = meal.listedIngredients.filter(ingredient: string => ingredient != '' && ingredient != null);
   const ingredientsText = validIngredients.join(', ');
 
   return (
