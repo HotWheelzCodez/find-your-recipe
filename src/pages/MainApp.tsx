@@ -121,7 +121,7 @@ const MainApp = () => {
       .then(response => response.json())
       .then(data => {
         if (data && data.meals) {
-          const meals: object[] = data.meals;
+          const meals = data.meals as any[];
           const ourMeals: Meal[] = [];
           meals.forEach(meal => {
             const mealApi = "https://www.themealdb.com/api/json/v1/1/lookup.php?i="+meal.idMeal;
