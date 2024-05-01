@@ -82,19 +82,19 @@ const MainApp = () => {
     const timeKeywords: Set<string> = new Set(["minute", "minutes", "min", "mins", "hour", "hours"]);
 
     for (let i = 0; i < words.length; i++) {
-      const word = words[i].toLowerCase();
+      const word = words[i].replace(/[^a-z]/gi, '').toLowerCase();
       if (timeKeywords.has(word)) {
-        const prevWord = words[i - 1];
+        const prevWord: string = words[i-1];
         if (prevWord.includes("-")) {
-          const range = prevWord.split("-");
+          const range: string[] = prevWord.split("-");
           if (range.length == 2) {
             let avgTime = (parseInt(range[0]) + parseInt(range[1])) / 2;
             cookTime += isNaN(avgTime) ? 0 : avgTime;
           }
         } else {
-          let tempTime = parseInt(prevWord, 10);
+          let tempTime = parseInt(prevWord);
           if (!isNaN(tempTime)) {
-            if (word.startsWith("hour")) {
+            if (word.includes("hour")) {
               tempTime *= 60;
             }
             cookTime += tempTime;
