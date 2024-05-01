@@ -26,6 +26,18 @@ p {
   padding-top: 20px;
 }
 
+.top {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .input {
   border: none;
   outline: none;
@@ -70,6 +82,7 @@ p {
   background-color: var(--theme-color);
   border: none;
   outline: none;
+  color: var(--background-color);
 }
 
 .ingredient:hover {
@@ -87,9 +100,29 @@ p {
   background-color: var(--theme-color);
   outline: none;
   border: none;
-  border-radius: 5px;
+  color: var(--background-color);
 }
 
 .selected-ingredient:hover {
   background-color: #cc7711;
+}
+
+.submit {
+  outline: 1px solid var(--theme-color);
+  border: none;
+  margin: 10px;
+  border-radius: 2px;
+  background-color: var(--theme-color);
+  color: var(--background-color);
+}
+
+.submit:hover {
+  background-color: #bb6611;
+}
+
+@media only screen and (max-width: 768px) {
+  #ingredients-input {
+    display: flex;
+    flex-direction: column;
+  }
 }

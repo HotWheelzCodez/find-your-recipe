@@ -13,6 +13,8 @@ const App = () => {
     recipe2
   ];
 
+  window.localStorage.clear();
+
   return (
     <div className="app">
       <div className="carousel-container">
@@ -28,7 +30,7 @@ const App = () => {
             <h1>Welcome To</h1>
             <h1>Find Your Recipe</h1>
           </div>
-          <p id="info">Recipes for you, with what you have, for the time you have.</p>
+          <p id="info"><i>Recipes for <b>you</b>, with what <b>you</b> have, for the time <b>you</b> have.</i></p>
           <div className="buttons" id="buttons-first">
             <Link to="/app">
               <button id="to-app-first" className="link-button">Get Started</button>
@@ -38,16 +40,13 @@ const App = () => {
       </div>
       <section id="about-project">
         <div className="about-project-container">
-          <div className="about-project-title">
-            <h1>About</h1>
-            <h1>Find Your Recipe</h1>
-          </div>
+          <h1 className="about-project-title">About <br/> Find Your Recipe</h1>
           <p id="about-project-info">
             This project is for a Tradeshow assignment for my school, we must find a problem,
             proove that it is a problem, and then create a soultion, this is my soultion to my
             problem, and a problem for many others. The problem is that many people such as parents or 
             college students don't have a lot of time to cook nor the energy to slave over the stove for hours; 
-            thus the soultion to it make an app that allows you to use the ingridents you currently
+            thus the soultion is to it make an app that allows you to use the ingridents you currently
             have, and input the time you have, or the time you want to spend to cook and then
             the type of food you like and then be provided with recipes that suites YOUR wants.
           </p>

@@ -2,6 +2,11 @@
   --background-color: #181820;
   --theme-color: #dd8822;
   --paragraph-color: #eebbaa;
+}
+
+body, root, html {
+  margin: none;
+  padding: none;
   background-color: var(--background-color);
 }
 
@@ -13,7 +18,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
+  background: var(--background-color);
   padding-bottom: 100px;
 }
 
@@ -105,8 +110,6 @@ h1 {
 }
 
 .about-project-title {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   color: var(--theme-color);
   font-size: 35px;
@@ -136,7 +139,9 @@ h1 {
   }
 
   #info {
-    padding: 100px;
+    padding: 50px;
+    font-size: 17px;
+    min-width: 500px;
   }
 
   .about-project-container {
@@ -145,14 +150,16 @@ h1 {
 
   .hero-container {
     padding-top: 0px;
+    margin: 0px;
   }
 
   .title {
-    padding: 50px;
+    padding: 0px;
   }
 
   .carousel-image {
     opacity: 0.5;
+    min-height: 250px;
   }
 
   #about-project-info {

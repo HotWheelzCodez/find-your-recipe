@@ -1,0 +1,52 @@
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  max-width: 800px;
+  background: #292931;
+  padding: 5px;
+  margin: 15px;
+}
+
+.image {
+  max-height: 500px;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.p-ingredient {
+  text-wrap: stable;
+}
+
+.meal-name {
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: var(--theme-color);
+}
+
+.instructions {
+  color: var(--theme-color);
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .image {
+    max-height: 300px;
+  }
+
+  .meal-container {
+    max-width: 700px;
+  }
+
+  .time-to-cook {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+   background: var(--background-color);
+}
+
+.main-body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.view-amount {
+  border: none;
+  outline: none;
+  margin: 20px;
+  background: var(--background-color);
+  color: var(--theme-color);
+}
+.view-amount:hover {  
+  background: #292931;
+}
