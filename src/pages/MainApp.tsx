@@ -8,16 +8,16 @@ const MainApp = () => {
   const [input, setInput] = useState<string>("");
   const [filtered, setFiltered] = useState<string[]>([]);
   const [items, setItems] = useState<string[]>(() => {
-    const storedItems: string = window.localStorage.getItem("items");
-    return storedItems ? storedItems.split(" ") : [];
+    const storedItems: string = window.localStorage.getItem("items") || "";
+    return storedItems != "" ? storedItems.split(" ") : [];
   });
   const [style, setStyle] = useState<string>(() => {
-    const storedStyle: string = window.localStorage.getItem("style");
-    return storedStyle ? storedStyle : "Italian";
+    const storedStyle: string = window.localStorage.getItem("style") || "";
+    return storedStyle != "" ? storedStyle : "Italian";
   });
   const [time, setTime] = useState<number>(() => {
-    const storedTime: string = window.localStorage.getItem("time");
-    return storedTime ? +storedTime : 30;
+    const storedTime: string = window.localStorage.getItem("time") || "";
+    return storedTime != "" ? +storedTime : 30;
   });
   const [focused, setFocused] = useState<boolean>(false);
 
