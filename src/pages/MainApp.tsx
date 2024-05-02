@@ -202,7 +202,7 @@ const MainApp = () => {
         </div>
         <div className="input-selection" id="ingredients-input">
           <div className="top">
-            <label className="input-name">Ingridents:</label> 
+            <label className="input-name">Ingredients:</label> 
             <input value={input}
             onChange={handleInput} 
             onFocus={() => setFocused(true)}
