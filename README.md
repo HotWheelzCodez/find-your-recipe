@@ -5,7 +5,6 @@ This is a web app that finds recipes for **you**, with what **you** have, for th
 ## Visit The Page
 You can access the web-app [here](https://findurrecipe.vercel.app/) through vercel, which I use to host the web-app
 
-## Contributions
-### The API
+## The API
 For the API for this project I use [TheMealDB](https://www.themealdb.com/) this is a free API, which I do not use for commercial purposes. This API is what powers this project, how ever it is also the projects greatest weakness since
 it has a limited amount of recipes compared to other recipe API's how ever this is the only truly free one that was available.
